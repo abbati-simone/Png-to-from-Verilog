@@ -10,7 +10,7 @@ Both scripts needs Python3 *png* and *getopt* packages.
 
 Png2ROM.py example
 ------------------
-Create a MIF file from blocks_rom.png with 4 bit red, 4 bit gree, 4 bit blue
+Create a MIF file from blocks_rom.png with 4 bit red, 4 bit green, 4 bit blue
 ```bash
 $./src/Png2ROM.py -i doc/png/blocks_rom.png -o doc/mif/blocks_rom.mif -f quartus -b 444
 ```
@@ -42,7 +42,7 @@ f: 011011011110;
 ...............
 ```
 
-Create a Verilog (the *case* portion) file from blocks_rom.png with 4 bit red, 4 bit gree, 4 bit blue
+Create a Verilog (the *case* portion) file from blocks_rom.png with 4 bit red, 4 bit green, 4 bit blue
 ```bash
 $./src/Png2ROM.py -i doc/png/blocks_rom.png -o doc/verilog/blocks_rom.v -f verilog -b 444
 ```
@@ -73,7 +73,7 @@ Output *blocks_rom.v* (partial preview):
 
 ROM2Png.py example
 ------------------
-Create a PNG file from Verilog file (containing only the *case* portion) with 4 bit red, 4 bit gree, 4 bit blue, 16 pixel width, 80 pixel height (without alpha)
+Create a PNG file from Verilog file (containing only the *case* portion) with 4 bit red, 4 bit green, 4 bit blue, 16 pixel width, 80 pixel height (without alpha)
 ```bash
 $./src/ROM2Png.py -i doc/verilog/blocks_rom.v -o doc/png/blocks_rom.png -f verilog -b 444 -x 16 -y 80
 ```
